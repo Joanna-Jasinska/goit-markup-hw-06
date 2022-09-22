@@ -19,7 +19,7 @@
       <header class="container container-lined">
         <a
           class="container-left"
-          href="https://joanna-jasinska.github.io/goit-markup-hw-05/"
+          href="https://joanna-jasinska.github.io/goit-markup-hw-06/"
         >
           <h2 class="company-name">
             <span class="accented-color">Web</span
@@ -56,7 +56,7 @@
           <h1>EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
 
           <button
-            class="box-200x50 has-hover"
+            class="box-200x50 has-hover button-animated button1"
             type="button"
             value="Zamów usługę"
             data-modal-open
@@ -301,7 +301,7 @@
       <footer>
         <div class="container-left container footer-flex">
           <div id="contact">
-            <a href="https://joanna-jasinska.github.io/goit-markup-hw-05/">
+            <a href="https://joanna-jasinska.github.io/goit-markup-hw-06/">
               <h2 class="company-name">
                 <span class="accented-color">Web</span
                 ><span class="strong-inverted-color">Studio</span>
@@ -336,17 +336,79 @@
               </svg>
             </div>
           </div>
+          <div>
+            <form method="get" name="newsletter-form" class="newsletter-form">
+              <label class="input-newsletter-email" for="input-name"
+                >Zapisz się do newslettera</label
+              >
+              <div>
+                <input
+                  id="input-newsletter-email"
+                  type="email"
+                  name="newsletter-email"
+                  placeholder="E-mail"
+                />
+
+                <button
+                  class="box-200x50 button-animated form-button has-hover"
+                  type="submit"
+                  value="Zapisz się"
+                >
+                  Zapisz się
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </footer>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <form method="get" name="signup-form">
+            <h2>Zostaw swoje dane w formularzu poniżej</h2>
+            <label class="icon-input-person" for="input-name">Imię</label>
+            <input id="input-name" type="text" name="name" />
+
+            <label class="icon-input-phone" for="input-phone">Telefon</label>
+            <input id="input-phone" type="tel" name="tel" required />
+            <label class="icon-input-email" for="input-email">Email</label>
+            <input id="input-email" type="email" name="email" required />
+            <label class="input-textarea" for="input-comment">Komentarz</label>
+            <textarea
+              id="input-comment"
+              placeholder="Wprowadź tekst"
+              name="email"
+            ></textarea>
+            <div class="container-lined-middle">
+              <input
+                id="input-policy-acceptance"
+                type="checkbox"
+                name="policy-accepted"
+              />
+              <label class="input-ok" for="input-policy-acceptance"
+                >Oświadczam iż akceptuję
+                <a class="link1 has-hover accented-color" href="">Regulamin</a>
+                i
+                <a class="link1 has-hover accented-color" href=""
+                  >Politykę Prywatności.</a
+                ></label
+              >
+            </div>
+            <button
+              class="box-200x50 button-animated form-button has-hover"
+              type="submit"
+              value="Wyślij"
+            >
+              Wyślij
+            </button>
+          </form>
+
           <button
             class="close-button has-hover"
             type="button"
             value="Zamknij okno"
             data-modal-close
           >
-            <svg width="11" height="11" margin="auto">
+            <svg width="12" height="12" margin="auto">
               <use href="./images/icons.svg#X"></use>
             </svg>
           </button>
