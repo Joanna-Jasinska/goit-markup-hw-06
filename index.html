@@ -341,7 +341,7 @@
               <label class="input-newsletter-email" for="input-name"
                 >Zapisz się do newslettera</label
               >
-              <div>
+              <div class="flex-lined">
                 <input
                   id="input-newsletter-email"
                   type="email"
@@ -354,7 +354,10 @@
                   type="submit"
                   value="Zapisz się"
                 >
-                  Zapisz się
+                  <div>Zapisz się</div>
+                  <svg class="icon-send" width="24" height="24" margin="auto">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
                 </button>
               </div>
             </form>
@@ -365,33 +368,83 @@
         <div class="modal">
           <form method="get" name="signup-form">
             <h2>Zostaw swoje dane w formularzu poniżej</h2>
-            <label class="icon-input-person" for="input-name">Imię</label>
-            <input id="input-name" type="text" name="name" />
+            <div class="label-flex">
+              <input id="input-name" type="text" name="name" />
+              <label for="input-name"
+                >Imię
+                <svg
+                  class="icon-input-person"
+                  width="18"
+                  height="18"
+                  margin="auto"
+                >
+                  <use href="./images/icons.svg#person"></use>
+                </svg>
+              </label>
+            </div>
 
-            <label class="icon-input-phone" for="input-phone">Telefon</label>
-            <input id="input-phone" type="tel" name="tel" required />
-            <label class="icon-input-email" for="input-email">Email</label>
-            <input id="input-email" type="email" name="email" required />
-            <label class="input-textarea" for="input-comment">Komentarz</label>
-            <textarea
-              id="input-comment"
-              placeholder="Wprowadź tekst"
-              name="email"
-            ></textarea>
-            <div class="container-lined-middle">
+            <div class="label-flex">
+              <input id="input-phone" type="tel" name="tel" required />
+              <label for="input-phone"
+                >Telefon
+                <svg
+                  class="icon-input-phone"
+                  width="18"
+                  height="18"
+                  margin="auto"
+                >
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="label-flex">
+              <input id="input-email" type="email" name="email" required />
+              <label for="input-email"
+                >Email
+                <svg
+                  class="icon-input-email"
+                  width="18"
+                  height="18"
+                  margin="auto"
+                >
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="label-flex">
+              <textarea
+                id="input-comment"
+                placeholder="Wprowadź tekst"
+                name="comment"
+              ></textarea>
+              <label class="input-textarea" for="input-comment"
+                >Komentarz</label
+              >
+            </div>
+            <div class="container-lined-middle checkbox-container">
               <input
                 id="input-policy-acceptance"
                 type="checkbox"
                 name="policy-accepted"
+                required
               />
+
               <label class="input-ok" for="input-policy-acceptance"
                 >Oświadczam iż akceptuję
                 <a class="link1 has-hover accented-color" href="">Regulamin</a>
                 i
                 <a class="link1 has-hover accented-color" href=""
                   >Politykę Prywatności.</a
-                ></label
-              >
+                >
+                <svg class="checkbox-0" width="16" height="15" margin="auto">
+                  <use href="./images/icons.svg#checkbox-background"></use>
+                </svg>
+                <svg class="checkbox-1" width="16" height="15" margin="auto">
+                  <use href="./images/icons.svg#checkbox-checked"></use>
+                </svg>
+              </label>
             </div>
             <button
               class="box-200x50 button-animated form-button has-hover"
