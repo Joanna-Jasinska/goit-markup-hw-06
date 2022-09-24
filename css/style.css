@@ -752,7 +752,7 @@ input:focus + label {
   display: flex;
   left: -23px;
   top: 0px;
-  background-color: var(--color-background1);
+  /* background-color: var(--color-background1); */
 }
 
 .checkbox-1 {
@@ -763,7 +763,7 @@ input:focus + label {
   display: flex;
   left: -23px;
   top: 0px;
-  background-color: var(--color-background1);
+  /* background-color: var(--color-background1); */
 }
 input:checked + label .checkbox-1 {
   visibility: visible;
@@ -778,4 +778,10 @@ input:checked + label .checkbox-0 {
 }
 .flex-lined > button {
   margin-top: 0px;
+}
+
+#input-policy-acceptance:hover,
+.checkbox-0:hover,
+.checkbox-1:hover {
+  cursor: pointer;
 }
